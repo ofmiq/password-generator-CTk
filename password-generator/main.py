@@ -79,7 +79,7 @@ class App(CTk.CTk):
 
         self.default_options()
 
-    def default_options(self):
+    def default_options(self) -> None:
         self.password_length_slider.set(12)
         self.password_length_entry.insert(0, '12')
         self.cb_lower.select()
