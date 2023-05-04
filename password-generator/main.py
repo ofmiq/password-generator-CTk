@@ -75,11 +75,10 @@ class App(CTk.CTk):
                                                               command=self.change_appearance_mode_event)
         self.appearance_mode_options_menu.grid(row=3, column=0, columnspan=4, pady=(10, 10))
 
-        self.appearance_mode_options_menu.set('System')
-
         self.default_options()
 
     def default_options(self) -> None:
+        self.appearance_mode_options_menu.set('System')
         self.password_length_slider.set(12)
         self.password_length_entry.insert(0, '12')
         self.cb_lower.select()
